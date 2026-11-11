@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0f5">
+    <title>A Little World For You 💗</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="floating"></div>
+
+    <nav class="navbar">
+        <div class="logo">♡ our little world</div>
+        <button id="musicBtn" class="music-btn">♫ Play Music</button>
+    </nav>
+
+    <main>
+
+        <!-- PAGE 1: WELCOME -->
+        <section class="page active" id="page1">
+            <div class="hero">
+                <div class="hero-text">
+                    <span class="tag">♡ A SPECIAL SURPRISE FOR YOU ♡</span>
+
+                    <h1>Hello,<br>
+                        <span>My Favorite Person!</span>
+                    </h1>
+
+                    <p>
+                        Aku punya sesuatu untuk kamu.
+                        Sebuah dunia kecil yang aku buat
+                        khusus untuk seseorang yang sangat spesial.
+                    </p>
+
+                    <button class="main-btn" onclick="nextPage(2)">
+                        Start Our Little Journey ♡
+                    </button>
+
+                    <div class="decoration">🌷 🎀 🧸</div>
+                </div>
+
+                <div class="hero-picture">
+                    <img src="images/main.jpeg"
+                         alt="Our favorite memory"
+                         onerror="this.src='https://placehold.co/400x500/ffe2ed/d86f9c?text=Our+Memory'">
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE 2: OUR STORY -->
+        <section class="page" id="page2">
+            <div class="content">
+                <span class="tag">OUR LITTLE STORY</span>
+                <h2>Everything Is Better <span>With You</span></h2>
+
+                <div class="story-card">
+                    <div class="story-icon">🌸</div>
+                    <h3>I'm Glad I Met You</h3>
+                    <p>
+                        Dari banyaknya orang di dunia ini,
+                        aku bersyukur karena bisa mengenal kamu.
+                    </p>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">💗</div>
+                    <h3>You Make Me Smile</h3>
+                    <p>
+                        Hal-hal sederhana bersamamu bisa menjadi
+                        kenangan yang paling istimewa.
+                    </p>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-icon">🧸</div>
+                    <h3>My Favorite Person</h3>
+                    <p>
+                        Terima kasih sudah menjadi bagian
+                        dari cerita hidupku.
+                    </p>
+                </div>
+
+                <button class="main-btn" onclick="nextPage(3)">
+                    Next Surprise ♡
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 3: PHOTO GALLERY -->
+        <section class="page" id="page3">
+            <div class="content">
+                <span class="tag">MUAHH MUAH</span>
+                <h2>Foto imupp, <span>Dan manismu</span></h2>
+                <p class="description">
+                    punya cerita yang ingin selalu aku ingat.
+                </p>
+
+                <div class="gallery">
+                    <div class="photo">
+                        <img src="images/foto1.jpeg" alt="Memory 1">
+                        <p>Our first memory ♡</p>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/foto2.jpeg" alt="Memory 2">
+                        <p>Sweet moments 🌷</p>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/foto3.jpeg" alt="Memory 3">
+                        <p>only you and me 💗</p>
+                    </div>
+
+                    <div class="photo">
+                        <img src="images/foto4.jpeg" alt="Memory 4">
+                        <p>My happy place 🎀</p>
+                    </div>
+                </div>
+
+                <button class="main-btn" onclick="nextPage(4)">
+                    I Have Something To Say ♡
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 4: LOVE LETTER -->
+        <section class="page" id="page4">
+            <div class="content">
+                <span class="tag">A LETTER FROM MY HEART</span>
+                <h2>Dear <span>My Love</span> 💌</h2>
+
+                <div class="envelope" id="envelope">
+                    <div class="envelope-icon">💌</div>
+                    <h3>A Letter For You</h3>
+                    <p>Someone wrote this with love.</p>
+                    <button class="main-btn" onclick="openLetter()">
+                        Open My Letter
+                    </button>
+                </div>
+
+                <div class="letter hidden" id="letter">
+                    <div class="letter-top">♡</div>
+                    <h3>Dear My Favorite Person,</h3>
+
+                    <p>Hai, selindikuhh! 💗</p>
+
+                    <p>
+                        Aku mungkin bukan orang yang paling pandai
+                        mengungkapkan perasaan. Tapi aku ingin kamu
+                        tahu bahwa aku bahagia bisa mengenal kamu.
+                    </p>
+
+                    <p>
+                        Terima kasih untuk setiap senyum, tawa,
+                        cerita, perhatian, dan waktu yang kita
+                        habiskan bersama.
+                    </p>
+
+                    <p>
+                        Aku tidak menjanjikan hubungan yang selalu
+                        sempurna. Tapi aku ingin terus belajar,
+                        menjaga, dan tumbuh bersama kamu.
+                    </p>
+
+                    <p>
+                        Semoga kita punya lebih banyak cerita,
+                        lebih banyak tawa, dan lebih banyak
+                        alasan untuk saling tersenyum.
+                    </p>
+
+                    <h3 class="signature">
+                        With all my love,<br>
+                        Your Favorite Person ♡
+                    </h3>
+
+                    <button class="secondary-btn" onclick="closeLetter()">
+                        Close Letter
+                    </button>
+                </div>
+
+                <button class="main-btn next-btn" onclick="nextPage(5)">
+                    One More Surprise ♡
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 5: SECRET MESSAGE -->
+        <section class="page" id="page5">
+            <div class="content">
+                <span class="tag">A LITTLE SECRET</span>
+                <h2>Can You Find <span>My Secret?</span></h2>
+
+                <p class="description">
+                    Ada pesan tersembunyi khusus untuk kamu.
+                    Coba tekan kotak di bawah ini.
+                </p>
+
+                <button class="secret-box" onclick="revealSecret()">
+                    <span id="secretIcon">🎀</span>
+                    <span id="secretLabel">Tap Me!</span>
+                </button>
+
+                <div class="secret-message hidden" id="secretMessage">
+                    <div class="secret-heart">💗</div>
+                    <h3>Here's My Secret...</h3>
+                    <p>
+                        Di antara banyak hal yang bisa aku pilih,
+                        aku selalu ingin memilih untuk mengenalmu
+                        lagi dan lagi.
+                    </p>
+                    <p>
+                        Kamu bukan sekadar seseorang yang aku sayang,
+                        kamu adalah seseorang yang ingin terus
+                        aku bahagiakan.
+                    </p>
+                    <h2>I'M SO LUCKY TO HAVE YOU! ♡</h2>
+                </div>
+
+                <button class="main-btn next-btn" onclick="nextPage(6)">
+                    Open The Final Surprise ♡
+                </button>
+            </div>
+        </section>
+
+        <!-- PAGE 6: FINAL SURPRISE -->
+        <section class="page" id="page6">
+            <div class="content final-content">
+                <span class="tag">THE LAST LITTLE SURPRISE</span>
+
+                <div class="gift">🎁</div>
+
+                <h2>One Last Thing, <span>My Love!</span></h2>
+
+                <p class="description">
+                    Sebelum perjalanan kecil ini berakhir,
+                    aku punya satu pesan lagi untuk kamu.
+                </p>
+
+                <button class="main-btn" onclick="openFinal()">
+                    Open Your Gift ♡
+                </button>
+
+                <div class="final-message hidden" id="finalMessage">
+                    <div class="final-heart">💖</div>
+                    <h2>You Are My Favorite!</h2>
+                    <p>
+                        Terima kasih sudah hadir dalam hidupku.
+                        Semoga kita terus menciptakan kenangan
+                        indah bersama.
+                    </p>
+                    <h1>I LOVE YOU! ♡</h1>
+                    <p class="final-small">Made with all my heart 🌷</p>
+                </div>
+
+                <button class="secondary-btn restart-btn" onclick="nextPage(1)">
+                    Start Again ↻
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with ♡ just for you</p>
+        <p>Our Little World — 2026</p>
+    </footer>
+
+    <audio id="backgroundMusic" loop>
+        <source src="romantic.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
